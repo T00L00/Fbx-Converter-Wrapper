@@ -3,14 +3,17 @@
 ### Purpose
 Unity 3D assets usually come in the form of ASCII FBX format. Some game engines can only import binary FBX files (e.g. Flax engine). This tool uses the Autodesk FBX Converter to convert all the ASCII FBX files in a given directory into binary FBX files. The tool will replicate the directory structure of the original directory. 
 
+### Requirements
+Python
+
 ### How to use
 
 1. Download the [Autodesk FBX Converter](https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives). 
 
-2. Update the config.json file with the following:
+2. Update the config.json file with the following (make sure any Windows paths are using the `\\` double slashes):
   - The source directory of all your ASCII fbx files
   - The destination directory
-  - The path to the FBX Converter. Make sure any Windows paths are using the `\\` double slashes.
+  - The path to the FBX Converter.
 
 ```
 {
